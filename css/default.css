@@ -76,13 +76,15 @@
         left: unset; 
         /* left 언셋 안시켜주면 계속 왼쪽에 붙음 */
         top: 0;
-        right: 0;
+        right: -500px;
     }   
 
     nav.show{
         position: fixed;
         top: 0;
-        right: -500px;
+        right: 0px;
+        left: unset;
+        bottom: unset;
     }
     
 
@@ -124,6 +126,8 @@
     .navS.hide{
         position: fixed;
         top: 0;
+        left: unset;
+        bottom: unset;
         right: -500px;
     }
 
@@ -227,12 +231,18 @@
     }
 
     section .item {
-        width: 410px;
-        margin-bottom: 0;
+        width: 420px;
+        margin-bottom: 30px;
         padding: 0;
     }
+    
+    section .item:nth-child(3n-1){
+        margin: 0 30px;
+        margin-bottom: 30px;
+    }
+
     section .item:last-child{
-        margin: 0;
+        margin-right: auto;
     }
 
     section h4{

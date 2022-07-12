@@ -41,6 +41,7 @@ $('.tab').on('click',function(){
     // $('.navS').show();
     $('nav').removeClass('show');
     $('.navS').removeClass('hide');
+    $('.gnbClick').show();
 })
 
 $('.gnbClick').on('click',function(){
@@ -48,6 +49,7 @@ $('.gnbClick').on('click',function(){
     // $('nav').show();
     $('.navS').addClass('hide');
     $('nav').addClass('show');
+    $('.gnbClick').hide();
 })
 
 

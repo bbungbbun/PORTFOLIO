@@ -1,16 +1,16 @@
 let design = [
-    // {
-    //     title : '맥도날드 인스타 광고', 
-    //     exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
-    //     tool : ['포토샵'],
-    //     img : '../images/design1.jpg'
-    // },
-    // {
-    //     title : '맥도날드 인스타 광고', 
-    //     exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
-    //     tool : ['포토샵'],
-    //     img : '../images/design1-1.jpg'
-    // },
+    {
+        title : '맥도날드 인스타 광고', 
+        exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
+        tool : ['포토샵'],
+        img : 'images/design1.jpg'
+    },
+    {
+        title : '맥도날드 인스타 광고', 
+        exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
+        tool : ['포토샵'],
+        img : 'images/design1-1.jpg'
+    },
     {
         title : '맥도날드 인스타 광고', 
         exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
@@ -54,7 +54,7 @@ for(let n=0; n<design[i].tool.length; n++){
 </div>
 <!-- item -->`
 
-$('.design').append(temp);
+$('.design .con').append(temp);
 });
 
 
