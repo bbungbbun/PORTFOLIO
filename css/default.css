@@ -1,0 +1,245 @@
+@media all and (min-width:1200px){
+    
+    /* main */
+
+    main{
+        width: 1320px;
+        margin: 0 auto;
+    }
+
+    /* pop */
+
+    .pop{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
+
+    .pop .tBox{
+        width: 100%;
+        height: 100px;
+        animation: bounce 1s infinite alternate ease-in;
+        transform: translateX(-30px);
+        position: absolute;
+        top: 75px;
+        left: 0;
+        text-align: center;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    @keyframes bounce{
+        0%{
+            transform: translateX(-30px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    .pop .txt{
+        font-size: 20px;
+        color: #eee;
+        margin-top: 12px;
+    }
+
+    .pop .icon{
+        transform: rotate(-90deg);
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        margin-right: 120px;
+    }
+
+    .pop img{
+        width: 40px;
+    }
+
+
+
+    /* header */
+
+    /* nav */
+
+    nav{
+        width: 424px;
+        height: 270px;
+        padding: 0 50px 0 0;
+        margin: 0 -50px 0 0;
+        position: fixed;
+        left: unset; 
+        /* left 언셋 안시켜주면 계속 왼쪽에 붙음 */
+        top: 0;
+        right: 0;
+    }   
+
+    nav.show{
+        position: fixed;
+        top: 0;
+        right: -500px;
+    }
+    
+
+    .btntab{
+        padding-top: 0;
+        margin-right: 24px;
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        height: 100%;
+        transform: rotate(90deg);
+      }
+
+    .btntab span{
+        width: 20px;
+        height: 2px;
+    }
+    .gnb span{
+        font-size: 24px;
+    }
+
+
+
+    /* navS */
+
+
+    .navS{
+        width: 100px;
+        height: 270px;
+        border-radius: 30px;
+        padding: 0 50px 0 0;
+        margin: 0 -50px 0 0;
+        position: fixed;
+        left: unset;
+        top: 0;
+        right: 0;
+    }
+
+    .navS.hide{
+        position: fixed;
+        top: 0;
+        right: -500px;
+    }
+
+    .gnbClick{
+        width: 100px;
+        height: 270px;
+        border-radius: 30px;
+        padding: 0 50px 0 0;
+        margin: 0 -50px 0 0;
+        position: fixed;
+        left: unset;
+        top: 0;
+        right: 0;
+        transition: all 1s;
+        cursor: pointer;
+
+    }
+
+    .gnbClick:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .gnbS span{
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+        line-height: 46px;
+    }
+
+    .gnbS{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    .gnbS li{
+        margin: 6px 0;
+    }
+
+    /* prof */
+
+    .prof{
+        margin-top: 48px;
+    }
+    .prof .con{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .prof .pic{
+        width: 600px;
+        height: 300px;
+        margin: 0;
+        margin-right: 24px;
+        border-radius: 20px;
+    }
+
+    .prof .txt{
+        text-align: left;
+        width: 800px;        
+        color: #aaa;
+        padding: 0 30px;
+    }
+
+    .prof .txt h3{
+        text-align: left;
+    }
+
+    .prof .contact{
+        align-items: flex-start;
+    }
+    .prof .contact h4{
+        font-weight: 500;
+    }
+    
+    .skill a{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        transition: all 0.5s;
+    }
+    .skill a:hover{
+        background-color: #eee;
+        color: #151515;
+        font-weight: 400;
+    }
+
+    /* section web */
+
+    
+    section h3{
+        margin-bottom: 36px;
+    }
+    
+    section .con{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section .item {
+        width: 410px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    section .item:last-child{
+        margin: 0;
+    }
+
+    section h4{
+        text-align: left;
+        font-size: 22px;
+        color: #ddd;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,85 @@
+@media all and (min-width:768px){
+    
+
+/* header */
+
+header p{
+    font-size: 36px;
+}
+
+header h1{
+    font-size: 72px;
+}
+
+/* nav */
+
+.btntab span{
+    width: 24px;
+    height: 3px;
+}
+
+.gnb span{
+    font-size: 28px;
+}
+
+
+/* navS */
+
+.gnbS span{
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+/* prof */
+
+.prof .pic{
+    width: 240px;
+    height: 240px;
+}
+
+.prof .txt{
+    padding: 0 50px;
+}
+
+.prof .txt h3{
+    font-size: 40px;
+}
+.prof .txt p{
+    font-size: 18px;
+}
+
+.prof .contact h4{
+    font-size: 20px;
+}
+
+.skill a{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* section web */
+
+section h3{
+    font-size: 28px;
+}
+
+section .con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+section .item {
+    width: calc(50% - 15px);
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+section .item:last-child{
+    margin-right: auto;
+}
+
+}
