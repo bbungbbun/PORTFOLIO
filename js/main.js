@@ -32,25 +32,44 @@ let a = 0;
      }
 });// scroll
 
-// 웹에 처음 들어왔을때만 뜨고 그 이후로는 안뜨게 하는 방법은 없나욘..
-
 let txtList = [];
 
 $('.tab').on('click',function(){
-    // $('nav').hide();
-    // $('.navS').show();
     $('nav').removeClass('show');
     $('.navS').removeClass('hide');
     $('.gnbClick').show();
 })
 
 $('.gnbClick').on('click',function(){
-    // $('.navS').hide();
-    // $('nav').show();
     $('.navS').addClass('hide');
     $('nav').addClass('show');
     $('.gnbClick').hide();
 })
 
 
+// view
+
+$('.video .item, .design .item').on('click',function(e){
+    e.preventDefault(); 
+
+    $('.view').fadeIn();
+
+    let pic = $(this).find('.pic').html();
+    $('.view figure').html(pic);
+
+    let h4Txt = $(this).find('h4').text();
+    let pTxt = $(this).find('p').text();
+
+    $('.view').find('h4').text(h4Txt);
+    $('.view').find('p').text(pTxt);
+
+});
+
+//close버튼 누르면 view 사라지게!
+
+$('.btnClose, .wrapClose').on('click',function(){
+
+    $('.view').hide();
+
+});
 

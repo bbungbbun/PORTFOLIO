@@ -182,13 +182,6 @@ nav.show{
 .gnb li:nth-child(4) .round{background-color: #9f9f9f; border:0;}
 .gnb li:nth-child(4) .round2{border-color:  #ec7000;}
 
-/* .gnb li:nth-child(4) .round2{
-    background-image: url(../images/icon_smile.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
-} */
-
 /* navS */
 
 
@@ -357,17 +350,15 @@ section .item {
 }
 
 section .pic{
-    /* height: 25vh; */
     height: 200px;
     overflow: hidden;
     background-color: #ddd;
-    /* background-image: url(); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 section .pic img{
-    width: 100%;
+    width: 100%;    
 }
 
 section .txt{
@@ -405,12 +396,17 @@ section .txt span{
 }
 
 
+/* background image */
+
+/* web */
+
+.web .pic2{background-image: url(../images/web1.gif)}
 
 /* design */
 
-/* 
 .design .pic1{background-image: url(../images/design1.jpg)}
 .design .pic2{background-image: url(../images/design1-1.jpg)}
 .design .pic3{background-image: url(../images/design1-2.jpg)}
 .design .pic4{background-image: url(../images/design2.jpg)}
-.design .pic5{background-image: url(../images/design3.jpg)} */
+.design .pic5{background-image: url(../images/design3.jpg)} 
+

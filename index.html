@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/view.css">
 </head>
 <body>
 
@@ -44,8 +45,6 @@
             </div>
         </div>
     </div>
-
-    
 
     <header>
         <div class="hwrap">
@@ -92,15 +91,28 @@
         </ul>
         <div class="gnbClick"></div>
     </div>
-    
+
+    <div class="view">
+        <div class="wrapClose"></div>
+        <button class="btnClose">
+            <span></span>
+            <span></span>
+        </button><!--btnClose-->
+        <figure><!--이미지가 출력될 영역--></figure>
+
+        <div class="txtBox">
+            <h4>테스트용 제목</h4>
+            <p>테스트용 내용</p>
+        </div>
+    </div><!--view-->
 
 <main>
-    <div class="prof" id="prof">
+    <div class="prof" id="prof"> 
         <div class="con">
             <div class="pic"></div>
             <div class="txt">
                 <h3>유니</h3>
-                <p>자기소개를 해야하는데 이거 대체 어떤 말을 써야하는지 모르겠고 이력서 같은 걸 써봐야 알지 이거원 내가 뭔말을 하면 좋을까 말로하면 할 수 있는데 글로하려니 안된다 정말 난감해</p>
+                <p>안녕하세요! 개발자를 꿈꾸고 있는 유니입니다!</p>
                 <div class="contact">
                     <h4>연락처</h4>
                     <a href="#">tnqkrdbsl@naver.com</a>
@@ -118,21 +130,19 @@
                 </div>
             </div>
             <!-- skill -->
-        </div>
-        <!-- con -->
-    </div>
-    <!-- prof -->
+        </div><!-- con -->
+    </div><!-- prof -->
 
     <section class="web" id="web">
         <h3>웹 포트폴리오</h3>
         <div class="con">
-            <div class="item">
-                <div class="pic"></div>
+            <div class="item"><a href="#">
+                <div class="pic pic1"></div>
                 <div class="txt">
                     <h4>코웨이 반응형 웹</h4>
-                    <p> 기존의 코웨이 웹을 리뉴얼 한 반응형 웹입니다.
-                        저를 포함한 세명의 팀원과 함께 만든 반응형 웹입니다.
-                        전반적인 디자인에 대한 의견 제시에 참여하였고
+                    <p>기존의 코웨이 웹을 리뉴얼 한 반응형 웹입니다. 
+                        저를 포함한 세명의 팀원과 함께 만든 반응형 웹입니다. 
+                        전반적인 디자인에 대한 의견 제시에 참여하였고 
                         이후 전반적인 코딩 작업에 참여하였습니다.</p>
                     <div class="twrap">
                         <span>디자인 10%</span>
@@ -141,15 +151,14 @@
                         <span>JAVASCRIPT 90%</span>
                     </div>
                 </div>
-            </div>
-            <!-- item -->
+            </a></div>
 
-            <div class="item">
-                <div class="pic"></div>
+            <div class="item"><a href="https://bbungbbun.github.io/CONNECT-APP/">
+                <div class="pic pic2"></div>
                 <div class="txt">
                     <h4>'커넥트' 모바일 웹</h4>
-                    <p> '커넥트'라는 음악 커뮤니티를 구상하여 제작한 모바일 웹입니다. 
-                        제이쿼리와 자바스크립트를 활용하여 다양한 효과를 준 것이 특징입니다.
+                    <p>'커넥트'라는 음악 커뮤니티를 구상하여 제작한 모바일 웹입니다. 
+                        제이쿼리와 자바스크립트를 활용하여 다양한 효과를 준 것이 특징입니다. 
                         메인 홈을 포함하여 알림창 및 로그인 창 등을 구현 하였습니다.</p>
                     <div class="twrap">
                         <span>디자인 100%</span>
@@ -158,11 +167,10 @@
                         <span>JAVASCRIPT 100%</span>
                     </div>
                 </div>
-            </div>
-            <!-- item -->
+            </a></div>
 
-            <div class="item">
-                <div class="pic"></div>
+         <div class="item"><a href="#">
+                <div class="pic pic3"></div>
                 <div class="txt">
                     <h4>PO 반응형 웹</h4>
                     <p> PO(POCKET OPERATOR)를 소개하는 반응형웹입니다. 
@@ -174,18 +182,16 @@
                         <span>JAVASCRIPT 100%</span>
                     </div>
                 </div>
-            </div>
-            <!-- item -->
+            </a></div>
         </div>
         <!-- con -->
     </section>
     <!-- section web -->
 
     <section class="video" id="video">
-
         <h3>동영상 포트폴리오</h3>
         <div class="con">
-            <div class="item">
+            <div class="item"><a href="#">
                 <div class="pic"></div>
                 <div class="txt">
                     <h4>영상제목</h4>
@@ -196,9 +202,9 @@
                         <span>프리미어</span>
                     </div>
                 </div>
-            </div>
+            </a></div>
             <!-- item -->
-            <div class="item">
+            <div class="item"><a href="#">
                 <div class="pic"></div>
                 <div class="txt">
                     <h4>영상제목</h4>
@@ -209,9 +215,9 @@
                         <span>프리미어</span>
                     </div>
                 </div>
-            </div>
+            </a></div>
             <!-- item -->
-            <div class="item">
+            <div class="item"><a href="#">
                 <div class="pic"></div>
                 <div class="txt">
                     <h4>영상제목</h4>
@@ -222,21 +228,17 @@
                         <span>프리미어</span>
                     </div>
                 </div>
-            </div>
+            </a></div>
             <!-- item -->
-
         </div>
         <!-- con -->
-        
     </section>
 
 
     <section class="design" id="design">
-
         <h3>디자인 포트폴리오</h3>
         <div class="con"></div>
         <!-- con -->
-        
     </section>
 </main>
 
@@ -245,3 +247,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
