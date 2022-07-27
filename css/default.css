@@ -252,4 +252,10 @@
         font-weight: 500;
     }
 
+
+    /* view */
+    
+    figure img{
+        width: 500px;
+    }
 }

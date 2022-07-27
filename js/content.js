@@ -50,27 +50,31 @@ let design = [
         title : '맥도날드 인스타 광고 (ver.1)', 
         exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
         tool : ['포토샵'],
+        img : '<img src="images/design1.jpg" alt="">'
     },
     {
         title : '맥도날드 인스타 광고 (ver.2)', 
         exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
         tool : ['포토샵'],
+        img : '<img src="images/design1-1.jpg" alt="">'
     },
     {
         title : '맥도날드 인스타 광고 (ver.3)', 
         exp : '포토샵을 이용해서 맥도날드 홍보 이미지를 제작하였습니다.',
         tool : ['포토샵'],
+        img : '<img src="images/design1-2.jpg" alt="">'
     },
     {
         title : '앨범아트 이미지1', 
         exp : '포토샵을 이용해서 앨범아트 이미지를 제작하였습니다.',
         tool : ['포토샵'],
-        
+        img : '<img src="images/design2.jpg" alt="">'
     },
     {
         title : '앨범아트 이미지2', 
         exp : '포토샵을 이용해서 앨범아트 이미지를 제작하였습니다.',
         tool : ['포토샵'],
+        img : '<img src="images/design3.jpg" alt="">'
     },
 
 ];
@@ -84,7 +88,7 @@ for(let n=0; n<design[i].tool.length; n++){
 }
     let temp = `
     <div class="item">
-    <div class="pic pic${i+1}"></div>
+    <div class="pic pic${i+1}">${box.img}</div>
     <div class="txt">
         <h4>${box.title}</h4>
         <p>${box.exp}</p>

@@ -2,6 +2,8 @@ $('.skill a').on('click',function(e){
     e.preventDefault()
 })
 
+// 팝업창 처음 접속 한번만 뜨게 하기
+
 $('.pop').hide();
 
 let a = 0;
@@ -10,22 +12,15 @@ let a = 0;
      let scr = $(window).scrollTop();
      let hig = $('header').height();
      if(scr >= hig && a==0){
-
         let popLocal = localStorage.getItem('pop');
         console.log(popLocal)
-
         if(popLocal != 'true'){
-
-
          $('.pop').fadeIn().on('click',function(){
              $('.pop').fadeOut()
              a++;
              console.log(a);
-
              localStorage.setItem('pop',true);
          });
-
-
          }
      }else{
          $('.pop').hide();
@@ -68,8 +63,6 @@ $('.video .item, .design .item').on('click',function(e){
 //close버튼 누르면 view 사라지게!
 
 $('.btnClose, .wrapClose').on('click',function(){
-
     $('.view').hide();
-
 });
 

@@ -347,6 +347,13 @@ section .item {
     border-radius: 20px;
     overflow: hidden;
     box-sizing: border-box;
+    background-color: #222;
+    transition: all 0.3s;
+}
+section .item:hover{
+    background-color: #151515;
+    transform: translate(3px, 3px);
+    
 }
 
 section .pic{
@@ -396,17 +403,105 @@ section .txt span{
 }
 
 
-/* background image */
+/* item background image */
 
 /* web */
 
-.web .pic2{background-image: url(../images/web1.gif)}
+.web .pic1{background-image: url(../images/web_coway_m.gif)}
+.web .pic2{background-image: url(../images/web_connect.gif)}
 
 /* design */
+.design .pic img{
+    display: none;
+}
+
 
 .design .pic1{background-image: url(../images/design1.jpg)}
 .design .pic2{background-image: url(../images/design1-1.jpg)}
 .design .pic3{background-image: url(../images/design1-2.jpg)}
 .design .pic4{background-image: url(../images/design2.jpg)}
 .design .pic5{background-image: url(../images/design3.jpg)} 
+
+/* view */
+
+
+.view{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.view h4{
+    font-size: 24px;
+}
+.view p{
+    font-size: 20px;
+    margin-bottom: 48px;
+    color: #999;
+}
+
+.btnClose{
+    width: 50px;
+    height: 50px;
+    background-color: unset;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btnClose span{
+    display: block;
+    width: 22px;
+    height: 4px;
+    position: absolute;
+    top:23px;
+    left: 14px;
+    background-color: #fff;
+}
+
+.btnClose span:first-child{
+    transform: rotate(45deg);
+}
+
+.btnClose span:last-child{
+    transform: rotate(-45deg);
+}
+
+.wrapClose{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure{
+    z-index: 3;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+figure img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100vw;
+}
+
+.txtBox{
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    text-align: center;
+}
 
