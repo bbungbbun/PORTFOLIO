@@ -1,5 +1,12 @@
 @media all and (min-width:768px){
     
+.pc{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
 
 /* header */
 
@@ -93,6 +100,7 @@ section .item:last-child{
 /* web */
 
 .web .pic1{background-image: url(../images/web_coway.gif)}
+.web .pic3{background-image: url(../images/web_PO.gif)}
 
 
 }

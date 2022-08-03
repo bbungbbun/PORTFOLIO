@@ -7,7 +7,6 @@ $('.skill a').on('click',function(e){
 $('.pop').hide();
 
 let a = 0;
-
  $(window).on('scroll',function(){
      let scr = $(window).scrollTop();
      let hig = $('header').height();
@@ -44,7 +43,7 @@ $('.gnbClick').on('click',function(){
 
 // view
 
-$('.video .item, .design .item').on('click',function(e){
+$('.design .item').on('click',function(e){
     e.preventDefault(); 
 
     $('.view').fadeIn();
@@ -65,4 +64,37 @@ $('.video .item, .design .item').on('click',function(e){
 $('.btnClose, .wrapClose').on('click',function(){
     $('.view').hide();
 });
+
+
+// 반응형
+let bWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+  const nWidth = window.innerWidth;
+  if ((bWidth < 1200 && nWidth >= 1200) || (bWidth > 1199 && nWidth <= 1199)) {
+    location.reload();
+  }
+  beforeWidth = nowWidth;
+});
+
+if(matchMedia("screen and (max-width: 767px)").matches){
+    console.log("mobile");
+    $('.web .pc').remove()
+
+
+}else if(matchMedia("screen and (min-width: 768px)").matches){
+    console.log("tablet");
+    $('.web .mobile').remove()
+    $('.pic2 video').get(0).pause()
+    $('.web .item').on('mouseover',function(){ 
+        let vid = $(this).find('video').get(0);
+        vid.play();
+        $(this).find('video').get(0);
+    }).on('mouseout',function(){
+        let vid = $(this).find('video').get(0);
+        vid.pause();
+    });
+  }
+
+
+
 

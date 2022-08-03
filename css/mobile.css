@@ -1,6 +1,21 @@
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     padding-bottom: 100px;
+}
+
+.pc{
+    display: none;
+}
+
+.mobile{
+    display: block;
+}
+
+.video .key{
+    display: none;
 }
 
 /* colors */
@@ -84,7 +99,7 @@ header{
     width: 100%;
     height: 100vh;
     position: relative;
-    z-index: 999;
+    z-index: 9999;
 }
 .hwrap{
     display: flex;
@@ -115,6 +130,7 @@ nav{
     position: fixed;
     bottom: -500px;
     left: 0;
+    z-index: 9999;
     transition: all 1s;
 }
 
@@ -195,6 +211,8 @@ nav.show{
     bottom: 0;
     left: 0;
     transition: all 0.8s;
+    z-index: 999;
+
 }
 
 .navS.hide{
@@ -240,7 +258,7 @@ nav.show{
 .gnbS li{
     margin: 0 12px;
     position: relative;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .gnbS li:nth-child(1) .round{background-color: #4885ed;}
@@ -348,12 +366,16 @@ section .item {
     overflow: hidden;
     box-sizing: border-box;
     background-color: #222;
-    transition: all 0.3s;
+}
+section .item a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 section .item:hover{
     background-color: #151515;
     transform: translate(3px, 3px);
-    
+    transition: all 0.3s;
 }
 
 section .pic{
@@ -363,6 +385,7 @@ section .pic{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 section .pic img{
     width: 100%;    
@@ -392,6 +415,7 @@ section .txt .twrap{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 section .txt span{
     display: block;
     width: max-content;
@@ -407,8 +431,19 @@ section .txt span{
 
 /* web */
 
-.web .pic1{background-image: url(../images/web_coway_m.gif)}
+/* .web .pic1{background-image: url(../images/web_coway_m.gif)}
 .web .pic2{background-image: url(../images/web_connect.gif)}
+.web .pic3{background-image: url(../images/web_PO_m.gif)} */
+
+
+.web .pic video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* design */
 .design .pic img{
@@ -434,6 +469,7 @@ section .txt span{
     width: 100%;
     height: 100%;
     color: #fff;
+    z-index: 9999;
 }
 .view h4{
     font-size: 24px;
