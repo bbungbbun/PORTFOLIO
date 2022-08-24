@@ -85,7 +85,7 @@ if(matchMedia("screen and (max-width: 767px)").matches){
     console.log("tablet");
     $('.web .mobile').remove()
     $('.pic2 video').get(0).pause()
-    $('.web .item').on('mouseover',function(){ 
+    $('.web .item, .video .item').on('mouseover',function(){ 
         let vid = $(this).find('video').get(0);
         vid.play();
         $(this).find('video').get(0);
