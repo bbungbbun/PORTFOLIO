@@ -1,4 +1,4 @@
-$('.skill a').on('click',function(e){
+$('.prof a').on('click',function(e){
     e.preventDefault()
 })
 
@@ -42,7 +42,6 @@ $('.gnbClick').on('click',function(){
 
 
 // view
-
 $('.design .item').on('click',function(e){
     e.preventDefault(); 
 
@@ -56,7 +55,6 @@ $('.design .item').on('click',function(e){
 
     $('.view').find('h4').text(h4Txt);
     $('.view').find('p').text(pTxt);
-
 });
 
 //close버튼 누르면 view 사라지게!
@@ -83,9 +81,15 @@ if(matchMedia("screen and (max-width: 767px)").matches){
 
 }else if(matchMedia("screen and (min-width: 768px)").matches){
     console.log("tablet");
-    $('.web .mobile').remove()
-    let vid = $('.video .item').find('video').get(0);
-    vid.pause();
+    $('.web .mobile').remove();
+
+    // .video video autoplay pc에서는 안되게
+    let vid1 = $('.video .item').find('video').get(0);
+    let vid2 = $('.video .item').find('video').get(1);
+    let vid3 = $('.video .item').find('video').get(2);
+    vid1.pause();
+    vid2.pause();
+    vid3.pause();
 
     $('.pic2 video').get(0).pause()
     $('.web .item, .video .item').on('mouseover',function(){ 
