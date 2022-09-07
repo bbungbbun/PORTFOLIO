@@ -1,4 +1,4 @@
-$('.prof a').on('click',function(e){
+$('.skill a').on('click',function(e){
     e.preventDefault()
 })
 

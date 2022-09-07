@@ -309,6 +309,11 @@ nav.show{
 
 }
 
+.contact .github{
+    margin-top: 12px;
+}
+
+
 .skill{
     width: 100%;
     display: flex;
@@ -447,6 +452,7 @@ section .txt span{
 
 /* video */
 
+.video .picThumb{background-image: url(../images/vid_earthThumb.jpg)}
 .video .pic1{background-image: url(../images/vid_animation.jpg)}
 .video .pic2{background-image: url(../images/vid_connect.jpg)}
 

@@ -85,6 +85,10 @@ section .item {
     margin-bottom: 30px;
 }
 
+.video .con .item:last-child{
+    margin-right: 0;
+}
+
 section .item:last-child{
     margin-right: auto;
 }
